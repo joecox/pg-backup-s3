@@ -1,8 +1,8 @@
 FROM alpine:3.5
 
-RUN apk --update add postgresql-client=9.6.1-r0 \
+RUN apk --update add postgresql-client=9.6.2-r0 \
                      python py-pip py-setuptools git ca-certificates \
-                     curl
+                     curl coreutils
 
 RUN pip install python-dateutil
 
